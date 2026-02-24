@@ -4,7 +4,7 @@ Local Ollama web interface built with React, Vite, and Tailwind. Intended as a s
 
 ## Motivation
 
-Learning React/Vite/Tailwindcss/etc. while building something somewhat usefull.
+Learning React/Vite/Tailwindcss/etc. while building something somewhat useful.
 
 ## Prerequisites
 
