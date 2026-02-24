@@ -1,0 +1,23 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_ORIGINS=*
+    restart: unless-stopped
+
+  llllm:
+    build: .
+    container_name: llllm-frontend
+    ports:
+      - "1111:80"
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama:
