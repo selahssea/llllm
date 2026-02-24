@@ -166,7 +166,7 @@ export default function Chat() {
   };
 
   return (
-    <div className="flex flex-col h-full p-4 bg-gray-50 dark:bg-teal-950 max-w-4xl">
+    <div className="flex flex-col h-full p-4 bg-teal-50 dark:bg-teal-950 max-w-4xl">
       <div className="flex-1 overflow-y-auto space-y-4 pb-4">
         {messages.map((msg) => (
           <div
@@ -174,7 +174,7 @@ export default function Chat() {
             className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {msg.role === 'user' ? (
-              <div className="max-w-[75%] rounded-2xl px-4 py-3 bg-blue-600 text-white">
+              <div className="max-w-[75%] rounded-2xl px-4 py-3 bg-teal-600 text-white">
                 {msg.content}
               </div>
             ) : (
@@ -193,7 +193,7 @@ export default function Chat() {
           onKeyDown={handleKeyDown}
           disabled={isLoading}
           placeholder="Ask anything… (Shift + Enter for new line)"
-          className="flex-1 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-3 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none min-h-[48px] max-h-[160px]"
+          className="flex-1 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-teal-900 px-4 py-3 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none min-h-[48px] max-h-[160px]"
           rows={2}
         />
 
@@ -201,7 +201,7 @@ export default function Chat() {
           type="button"
           onClick={handleSend}
           disabled={!value.trim() || isLoading}
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-600 text-white disabled:bg-gray-400 dark:disabled:bg-teal-900 disabled:opacity-20 disabled:cursor-not-allowed transition-colors hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-label="Send message"
         >
           <PaperAirplaneIcon className="h-6 w-6" />
