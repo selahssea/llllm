@@ -16,8 +16,8 @@ export default function MarkdownMessage({ message }: MarkdownMessageProps) {
     <div
       className={`max-w-[75%] rounded-2xl px-4 py-3 ${
         message.role === 'user'
-          ? 'bg-teal-800 text-white'
-          : 'bg-gray-200 dark:bg-teal-900/30 text-gray-900 dark:text-gray-100'
+          ? 'bg-teal-800 text-white dark:text-white/20'
+          : 'bg-gray-200 dark:bg-teal-900/30 text-gray-900 dark:text-gray-100/70'
       }`}
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>

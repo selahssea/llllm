@@ -54,7 +54,7 @@ export default function ThemeSelector() {
   }
 
   return (
-    <div className="p-1 bg-gray-100 mx-2 rounded-2xl dark:bg-white/5">
+    <div className="p-1 bg-gray-100 mx-2 rounded-xs dark:bg-white/5">
       {THEMES.map((t) => {
         const Icon = iconMap[t];
         const isActive = theme === t;
@@ -64,7 +64,7 @@ export default function ThemeSelector() {
             key={t}
             onClick={() => switchTheme(t)}
             className={cn(
-              'p-2 rounded-xl focus:outline-none focus:ring-2 cursor-pointer transition-all duration-200',
+              'p-2 rounded-xs focus:outline-none focus:ring-2 focus:ring-teal-300/10 cursor-pointer transition-all duration-200',
               isActive
                 ? 'bg-gray-200 dark:bg-teal-950 dark:hover:bg-teal-950 shadow-inner'
                 : 'dark:hover:bg-teal-900/50 hover:bg-gray-200',
@@ -74,7 +74,7 @@ export default function ThemeSelector() {
           >
             {Icon ? (
               <Icon
-                className="h-4 w-4 text-gray-600 dark:text-amber-600"
+                className="h-4 w-4 text-gray-600 dark:text-teal-500/60"
                 aria-hidden="true"
               />
             ) : null}

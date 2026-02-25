@@ -193,7 +193,7 @@ export default function Chat() {
           onKeyDown={handleKeyDown}
           disabled={isLoading}
           placeholder="Ask anything… (Shift + Enter for new line)"
-          className="flex-1 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-teal-900 px-4 py-3 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none min-h-[48px] max-h-[160px]"
+          className="flex-1 rounded-xs border border-teal-300 dark:border-teal-600/20 bg-white dark:bg-teal-900 px-4 py-3 text-gray-900 dark:text-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-500/10 resize-none min-h-19 max-h-[160px]"
           rows={2}
         />
 
@@ -201,7 +201,7 @@ export default function Chat() {
           type="button"
           onClick={handleSend}
           disabled={!value.trim() || isLoading}
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-600 text-white disabled:bg-gray-400 dark:disabled:bg-teal-900 disabled:opacity-20 disabled:cursor-not-allowed transition-colors hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex h-19 w-12 items-center justify-center rounded-xs bg-teal-600 text-white disabled:bg-gray-400 dark:disabled:bg-teal-900 disabled:opacity-20 disabled:cursor-not-allowed transition-colors hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-label="Send message"
         >
           <PaperAirplaneIcon className="h-6 w-6" />
