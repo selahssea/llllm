@@ -2,7 +2,13 @@
 
 Local Ollama web interface built with React, Vite, and Tailwind. Intended as a simple chat UI for models running via the Ollama HTTP API.
 
+### Desktop
+
 ![Screenshot of the app](image.png)
+
+### Mobile
+
+![Screenshot of the mobile app](image.mobile.png)
 
 ## Motivation
 

@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
-import { type Message } from '../Chat';
+import { type Message } from '../../types/interfaces';
 
 interface MarkdownMessageProps {
   message: Message;

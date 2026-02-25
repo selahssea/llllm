@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/geist-mono": "^5.2.7",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.1.18",
     "clsx": "^2.1.1",
@@ -23,7 +24,8 @@
     "remark-gfm": "^4.0.1",
     "shiki": "^3.22.0",
     "tailwind-merge": "^3.4.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

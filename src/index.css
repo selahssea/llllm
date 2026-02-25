@@ -1,3 +1,17 @@
 @import "tailwindcss";
+@import "@fontsource/geist-mono/300.css";
+@import "@fontsource/geist-mono/400.css";
+@import "@fontsource/geist-mono/500.css";
+@import "@fontsource/geist-mono/700.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  html, body, pre, code, kbd, samp {
+    font-family: var(--font-mono);
+  }
+}
